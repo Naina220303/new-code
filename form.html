@@ -1,0 +1,135 @@
+<html>
+<head>
+  
+    <title>Forms</title>
+    <style>
+        .myform
+        {
+
+            background-color: rgba(104, 217, 237, 0.31);
+            width:600px;
+            height:900px;
+            border:2px solid rgb(8, 129, 181);
+         
+            
+        }
+        .myfield
+        {
+            background-color:rgb(125, 201, 243);
+            margin:7px;
+            padding:10px,5px;
+            border:2px solid rgb(8, 129, 181);
+            border-radius:20px;
+        }
+        .action
+        {
+           
+            background-color:rgb(125, 201, 243);
+            border:none;
+            border-radius:5px;
+           padding:5px 15px;
+           border:2px solid rgb(8, 129, 181);
+           transition:all 0.5s;
+            }
+            .action:hover{
+                background-color:rgb(10, 161, 255);
+                transform: scale(1.09);
+
+            }
+        
+        </style>
+
+</head>
+<body>
+    <form class="myform">
+        <h2  style="text-align: center;"><u>HTML Forms</u></h2>
+        <fieldset class="myfield">
+            <legend>Personal Details</legend>
+        <label for "name">Name-</label>
+        <input required type="text" id="name" placeholder="Enter your full name">
+        <br><br>
+        <label for "phn">Contact-</label>
+        <input  required type="tel" id="phn" placeholder="Enter your contact number" pattern="[0-9]{10}">
+        <br><br>
+        <label for "mail">Email-ID-</label>
+        <input  required type="email" id="mail" placeholder="Enter your Email address" >
+        <br><br>
+        <label for "gender">Gender-&nbsp;&nbsp;&nbsp;</label>
+        <label for "male">Male</label>
+        <input type="radio" id="male" name="gender">
+        <label for "female">Female</label>
+        <input type="radio" id="female" name="gender">
+
+        </fieldset>
+        <br><br>
+        <fieldset class="myfield">
+            <legend>Input Details</legend>
+        <label for "username">Username-</label>
+        <input required type="text" id="username" placeholder="Enter your username">
+        <br><br>
+        <label for "pass">Password-</label>
+        <input required type="password" id="pass" placeholder="Enter your password">
+        </fieldset>
+        <br><br>
+        <fieldset class="myfield">
+            <legend>Skills Details</legend>
+        <label for="skill">Choose the languages you have learned so far ?</label>
+        <br>
+        <br>
+        <label for "c">C/C++</label>
+        <input type="checkbox"  id="c" value="1">&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for "java">Java</label>
+        <input type="checkbox" id="java" value="2">&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for "python">Python</label>
+        <input type="checkbox" id="python" value="3">&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for "javas">JavaScript</label>
+        <input type="checkbox" id="javas" value="4">&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for "sql">SQL</label>
+        <input type="checkbox" id="sql" value="5">&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for "html">HTML</label>
+        <input type="checkbox" id="html" value="6">&nbsp;&nbsp;&nbsp;&nbsp;
+         </fieldset>
+         <br>
+         <br>
+
+        <fieldset class="myfield">
+            <legend>Course Preference</legend>
+            <label for "course">Choose course and time slot : </label>
+            <select>
+                <optgroup label="Full Stack Web Development">
+                    <option>7:45-8:45 a.m.</option>
+                    <option>12:00-1:00 p.m.</option>
+                    <option>3:00-4:00 p.m.</option>
+                    <option>6:00-7:00 p.m.</option>
+                    </optgroup>
+                    <optgroup label="Android Development">
+                        <option>7:45-8:45 a.m.</option>
+                        <option>12:00-1:00 p.m.</option>
+                        <option>3:00-4:00 p.m.</option>
+                        <option disabled>6:00-7:00 p.m.</option>
+                        </optgroup>
+                        <optgroup label="No Code Web Development">
+                            <option>7:45-8:45 a.m.</option>
+                            <option>12:00-1:00 p.m.</option>
+                            <option>3:00-4:00 p.m.</option>
+                            <option>6:00-7:00 p.m.</option>
+                            </optgroup>
+
+                </select>
+            </fieldset><br><br>
+
+<fieldset class="myfield">
+    <legend>Queries</legend>
+    <textarea placeholder="Any queries, submit here."></textarea>
+</fieldset><br><br>
+<p style="text-align: center;">
+<input type="submit" value="SUBMIT" class="action">&nbsp;&nbsp;
+<input type="reset" value="RESET" class="action">
+</p>       
+         
+
+
+        </form>
+    
+</body>
+</html>
